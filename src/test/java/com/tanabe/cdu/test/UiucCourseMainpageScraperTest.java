@@ -1,5 +1,6 @@
 package com.tanabe.cdu.test;
 
+import com.tanabe.cdu.scrapers.UiucCourseMainPageScraper;
 import org.junit.Test;
 
 /**
@@ -10,6 +11,12 @@ public class UiucCourseMainpageScraperTest {
 
     @Test
     public void testCreate(){
-        UiucCourseMainpageScraper scraper = new UiucCourseMainpageScraper();
+        UiucCourseMainPageScraper scraper = new UiucCourseMainPageScraper();
+    }
+
+    @Test
+    public void testCanDownloadPage(){
+        UiucCourseMainPageScraper scraper = new UiucCourseMainPageScraper();
+        scraper.scrape();
     }
 }
